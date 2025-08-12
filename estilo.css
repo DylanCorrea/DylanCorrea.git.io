@@ -46,10 +46,19 @@
 
 /* Ajuste para el contenido principal para evitar que se oculte detrás del navbar */
 body {
-    padding-top: 76px;
+    padding-top: 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     text-align: center;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 #Inicio {
@@ -60,12 +69,13 @@ body {
     font-size: 2rem;
     font-weight: bold;
     padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
+    margin: 0;
+    border-radius: 0;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 #Inicio::before {
@@ -95,11 +105,12 @@ body {
     font-size: 2rem;
     font-weight: bold;
     padding: 20px;
-    margin: 20px;
+    margin: 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 20px;
+    border-radius: 0;
     color: white;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 #Tarifas {
@@ -108,11 +119,12 @@ body {
     font-size: 2rem;
     font-weight: bold;
     padding: 20px;
-    margin: 20px;
+    margin: 0;
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    border-radius: 20px;
+    border-radius: 0;
     color: white;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 #Contacto {
@@ -121,11 +133,12 @@ body {
     font-size: 2rem;
     font-weight: bold;
     padding: 20px;
-    margin: 20px;
+    margin: 0;
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    border-radius: 20px;
+    border-radius: 0;
     color: white;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    width: 100%;
 }
 
 .cards-container {
@@ -222,8 +235,8 @@ body {
 }
 
 section {
-    padding: 100px 20px;
-    min-height: 900px;
+    padding: 120px 20px 100px 20px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,6 +244,7 @@ section {
     position: relative;
     text-align: center;
     width: 100%;
+    margin: 0;
 }
 
 section h2 {
@@ -408,9 +422,10 @@ section p {
 
     /* Secciones principales */
     section {
-        padding: 40px 15px;
-        min-height: auto;
-        margin: 10px;
+        padding: 80px 15px 40px 15px;
+        min-height: 100vh;
+        margin: 0;
+        width: 100%;
     }
 
     #Inicio {
@@ -423,9 +438,10 @@ section p {
     #AcercaDeMi,
     #Tarifas,
     #Contacto {
-        min-height: auto;
-        padding: 40px 15px;
-        margin: 10px;
+        min-height: 100vh;
+        padding: 80px 15px 40px 15px;
+        margin: 0;
+        width: 100%;
     }
 
     section h2 {
@@ -650,7 +666,8 @@ section p {
     /* Footer móvil */
     .footer {
         padding: 30px 0 0 0;
-        margin-top: 40px;
+        margin: 0;
+        width: 100%;
     }
 
     .footer-content {
@@ -734,8 +751,9 @@ section p {
 /* Optimizaciones específicas para pantallas muy pequeñas */
 @media (max-width: 480px) {
     section {
-        padding: 30px 10px;
-        margin: 5px;
+        padding: 70px 10px 30px 10px;
+        margin: 0;
+        width: 100%;
     }
 
     section h2 {
@@ -899,7 +917,7 @@ section p {
 
     /* Mejor navegación por secciones */
     section {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 0;
     }
 }
 
@@ -1310,8 +1328,9 @@ section p {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
     padding: 60px 0 0 0;
-    margin-top: 80px;
+    margin: 0;
     position: relative;
+    width: 100%;
 }
 
 .footer::before {
@@ -1508,7 +1527,8 @@ section p {
 @media (max-width: 768px) {
     .footer {
         padding: 40px 0 0 0;
-        margin-top: 60px;
+        margin: 0;
+        width: 100%;
     }
 
     .footer-content {
