@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoMensajeria</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span style="font-size: 1.5rem; margin-right: 8px;">🏍️</span>
+                MotoMensajería
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" href="#AcercaDeMi">Acerca de mi</a>
+                    <a class="nav-link" href="#Tarifas">Tarifas</a>
+                    <a class="nav-link" href="#Contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Inicio">
+        <h2>🚚 MotoMensajería Express</h2>
+        <p class="hero-subtitle">Entregas rápidas y seguras en toda la ciudad</p>
+        <div class="hero-features">
+            <div class="feature-item">
+                <i class="bi bi-lightning-charge"></i>
+                <span>Entrega en 30 minutos</span>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-shield-check"></i>
+                <span>100% Seguro</span>
+            </div>
+            <div class="feature-item">
+                <i class="bi bi-geo-alt"></i>
+                <span>Cobertura completa</span>
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <button class="btn-primary"
+                onclick="document.getElementById('Contacto').scrollIntoView({behavior: 'smooth'})">
+                <i class="bi bi-telephone"></i>
+                Solicitar Servicio
+            </button>
+            <button class="btn-secondary"
+                onclick="document.getElementById('Tarifas').scrollIntoView({behavior: 'smooth'})">
+                <i class="bi bi-calculator"></i>
+                Ver Tarifas
+            </button>
+        </div>
+    </section>
+    <section id="AcercaDeMi">
+        <h2>🏍️ Nuestro Servicio</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>¿Por qué elegir MotoMensajería?</h3>
+                <p>Somos una empresa especializada en mensajería express con más de 5 años de experiencia en el mercado.
+                    Nuestros motociclistas profesionales garantizan entregas rápidas, seguras y puntuales.</p>
+
+                <div class="benefits">
+                    <div class="benefit-item">
+                        <i class="bi bi-clock-history"></i>
+                        <div>
+                            <h4>Rapidez</h4>
+                            <p>Entregas en tiempo récord gracias a nuestra flota de motos</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="bi bi-shield-lock"></i>
+                        <div>
+                            <h4>Seguridad</h4>
+                            <p>Tu paquete está asegurado y monitoreado en todo momento</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="bi bi-people"></i>
+                        <div>
+                            <h4>Confiabilidad</h4>
+                            <p>Miles de clientes satisfechos avalan nuestro servicio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Entregas Exitosas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">Minutos Promedio</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Disponibilidad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Tarifas">
+        <h2>💰 Nuestras Tarifas</h2>
+        <p class="section-subtitle">Precios transparentes y sin sorpresas</p>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-box-seam"></i>
+                </div>
+                <h3>Servicio Estándar</h3>
+                <div class="price">$800</div>
+                <p>Entrega en 2-3 horas. Ideal para paquetes pequeños y documentos. Incluye seguro básico y seguimiento
+                    en tiempo real.</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle"></i> Hasta 5kg</li>
+                    <li><i class="bi bi-check-circle"></i> Seguimiento GPS</li>
+                    <li><i class="bi bi-check-circle"></i> Foto de entrega</li>
+                </ul>
+            </div>
+            <div class="card featured">
+                <div class="card-badge">Más Popular</div>
+                <div class="card-icon">
+                    <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h3>Express (30 min)</h3>
+                <div class="price">$1200</div>
+                <p>Entrega súper rápida en 30 minutos. Perfecto para urgencias y documentos importantes que no pueden
+                    esperar.</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle"></i> Hasta 3kg</li>
+                    <li><i class="bi bi-check-circle"></i> Prioridad máxima</li>
+                    <li><i class="bi bi-check-circle"></i> Seguro completo</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-clock"></i>
+                </div>
+                <h3>Nocturno</h3>
+                <div class="price">$1500</div>
+                <p>Servicio disponible las 24 horas. Para entregas urgentes fuera del horario comercial. Disponible
+                    todos los días.</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle"></i> 24/7 disponible</li>
+                    <li><i class="bi bi-check-circle"></i> Hasta 10kg</li>
+                    <li><i class="bi bi-check-circle"></i> Seguro premium</li>
+                </ul>
+            </div>
+        </div>
+        <div class="additional-info">
+            <div class="info-item">
+                <i class="bi bi-info-circle"></i>
+                <span>Precios base para distancias hasta 10km. Consultar para distancias mayores.</span>
+            </div>
+            <div class="info-item">
+                <i class="bi bi-shield-check"></i>
+                <span>Todos nuestros servicios incluyen seguro de carga y seguimiento GPS.</span>
+            </div>
+        </div>
+    </section>
+    <section id="Contacto">
+        <h2>📞 Solicita tu Servicio</h2>
+        <p class="section-subtitle">Estamos listos para atenderte las 24 horas</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>📋 Información de Contacto</h3>
+                <div class="contact-item">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                        <span class="contact-label">WhatsApp 24/7</span>
+                        <span class="contact-value">+54 9 11 1234-5678</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-envelope-fill"></i>
+                    <div>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">info@motomensajeria.com</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <div>
+                        <span class="contact-label">Zona de Cobertura</span>
+                        <span class="contact-value">Buenos Aires y alrededores</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-clock-fill"></i>
+                    <div>
+                        <span class="contact-label">Horario de Atención</span>
+                        <span class="contact-value">24/7 - Todos los días</span>
+                    </div>
+                </div>
+
+                <div class="service-highlights">
+                    <h4>🚚 ¿Qué entregamos?</h4>
+                    <ul>
+                        <li>📦 Paquetes y encomiendas</li>
+                        <li>📄 Documentos importantes</li>
+                        <li>🍕 Comida a domicilio</li>
+                        <li>💊 Medicamentos urgentes</li>
+                        <li>🎁 Regalos y flores</li>
+                        <li>📱 Dispositivos electrónicos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h3>📝 Solicita tu Entrega</h3>
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="+54 9 11 1234-5678">
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Tipo de servicio *</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Selecciona un servicio</option>
+                        <option value="Servicio Estándar">Servicio Estándar (2-3 horas)</option>
+                        <option value="Express 30 min">Express (30 minutos)</option>
+                        <option value="Nocturno">Nocturno (24/7)</option>
+                        <option value="Otro">Otro - Especificar en mensaje</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="origen">Dirección de origen</label>
+                    <input type="text" id="origen" name="origen" placeholder="Dirección donde recoger el paquete">
+                </div>
+
+                <div class="form-group">
+                    <label for="destino">Dirección de destino</label>
+                    <input type="text" id="destino" name="destino" placeholder="Dirección de entrega">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Detalles del envío *</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required
+                        placeholder="Describe qué vas a enviar, peso aproximado, instrucciones especiales..."></textarea>
+                </div>
+
+                <button type="button" class="btn-whatsapp" onclick="enviarWhatsApp()">
+                    <i class="bi bi-whatsapp"></i>
+                    Solicitar Servicio por WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🏍️ MotoMensajería Express</h4>
+                <p>Tu socio de confianza para entregas rápidas y seguras en toda la ciudad. Más de 5 años conectando
+                    personas y negocios.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>🚚 Nuestros Servicios</h4>
+                <ul class="footer-links">
+                    <li><a href="#Tarifas">Servicio Estándar</a></li>
+                    <li><a href="#Tarifas">Express (30 min)</a></li>
+                    <li><a href="#Tarifas">Nocturno 24/7</a></li>
+                    <li><a href="#Contacto">Solicitar Cotización</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>📞 Contacto</h4>
+                <div class="contact-info-footer">
+                    <div class="contact-item-footer">
+                        <i class="bi bi-telephone"></i>
+                        <span>+54 9 11 1234-5678</span>
+                    </div>
+                    <div class="contact-item-footer">
+                        <i class="bi bi-envelope"></i>
+                        <span>info@motomensajeria.com</span>
+                    </div>
+                    <div class="contact-item-footer">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Buenos Aires, Argentina</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>⏰ Horarios</h4>
+                <div class="schedule-info">
+                    <div class="schedule-item">
+                        <span class="day">Lunes - Viernes:</span>
+                        <span class="time">24/7</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="day">Sábados:</span>
+                        <span class="time">24/7</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="day">Domingos:</span>
+                        <span class="time">24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 MotoMensajería Express. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function enviarWhatsApp() {
+            // Obtener los valores del formulario
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const servicio = document.getElementById('servicio').value;
+            const origen = document.getElementById('origen').value;
+            const destino = document.getElementById('destino').value;
+            const mensaje = document.getElementById('mensaje').value;
+
+            // Validar campos requeridos
+            if (!nombre || !email || !telefono || !servicio || !mensaje) {
+                alert('Por favor, completa todos los campos requeridos (*)');
+                return;
+            }
+
+            // Construir el mensaje para WhatsApp
+            let mensajeWhatsApp = `*🚚 NUEVA SOLICITUD DE SERVICIO - MotoMensajería*%0A%0A`;
+            mensajeWhatsApp += `*👤 Cliente:* ${nombre}%0A`;
+            mensajeWhatsApp += `*📧 Email:* ${email}%0A`;
+            mensajeWhatsApp += `*📱 Teléfono:* ${telefono}%0A`;
+            mensajeWhatsApp += `*⚡ Servicio:* ${servicio}%0A`;
+            if (origen) {
+                mensajeWhatsApp += `*📍 Origen:* ${origen}%0A`;
+            }
+            if (destino) {
+                mensajeWhatsApp += `*🎯 Destino:* ${destino}%0A`;
+            }
+            mensajeWhatsApp += `*📦 Detalles:* ${mensaje}%0A%0A`;
+            mensajeWhatsApp += `_Solicitud enviada desde el sitio web de MotoMensajería_%0A`;
+            mensajeWhatsApp += `_Fecha: ${new Date().toLocaleString('es-AR')}_`;
+
+            // Número de WhatsApp (reemplaza con tu número real)
+            const numeroWhatsApp = '5491112345678'; // Formato: código país + código área + número sin espacios
+
+            // Crear el enlace de WhatsApp
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`;
+
+            // Abrir WhatsApp en una nueva ventana
+            window.open(urlWhatsApp, '_blank');
+        }
+
+        // Animaciones de entrada
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animación para las cards
+            const cards = document.querySelectorAll('.card');
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function (entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = `all 0.6s ease ${index * 0.2}s`;
+                observer.observe(card);
+            });
+
+            // Animación para el formulario
+            const contactElements = document.querySelectorAll('.contact-info, .contact-form');
+            contactElements.forEach((element, index) => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateX(' + (index === 0 ? '-50px' : '50px') + ')';
+                element.style.transition = `all 0.8s ease ${index * 0.3}s`;
+
+                setTimeout(() => {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateX(0)';
+                }, 500 + index * 300);
+            });
+
+            // Efecto de partículas flotantes
+            createFloatingParticles();
+        });
+
+        function createFloatingParticles() {
+            const particlesContainer = document.createElement('div');
+            particlesContainer.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: 1;
+                overflow: hidden;
+            `;
+            document.body.appendChild(particlesContainer);
+
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.style.cssText = `
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    background: rgba(255, 255, 255, 0.3);
+                    border-radius: 50%;
+                    animation: float ${3 + Math.random() * 4}s linear infinite;
+                    left: ${Math.random() * 100}%;
+                    animation-delay: ${Math.random() * 2}s;
+                `;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Smooth scroll para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efecto de typing para el título principal
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Aplicar efecto typing al título principal
+        setTimeout(() => {
+            const mainTitle = document.querySelector('#Inicio h2');
+            if (mainTitle) {
+                const originalText = mainTitle.textContent;
+                typeWriter(mainTitle, originalText, 80);
+            }
+        }, 1000);
+    </script>
+
+    <style>
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Efecto de brillo en hover para cards */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .card:hover::before {
+            left: 100%;
+        }
+
+        /* Efecto de pulso para el botón de WhatsApp */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .btn-whatsapp {
+            animation: pulse 2s infinite;
+        }
+
+        .btn-whatsapp:hover {
+            animation: none;
+        }
+    </style>
+</body>
+
+</html>
