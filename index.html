@@ -30,6 +30,7 @@
                     <a class="nav-link active" aria-current="page" href="#Inicio">🏠 Inicio</a>
                     <a class="nav-link" href="#AcercaDeMi">ℹ️ Acerca de mi</a>
                     <a class="nav-link" href="#Tarifas">💰 Tarifas</a>
+                    <a class="nav-link" href="#Transportes">🚗 Transportes</a>
                     <a class="nav-link" href="#Contacto">📞 Contacto</a>
                 </div>
                 <div class="navbar-nav ms-auto d-lg-none">
@@ -178,6 +179,64 @@
             </div>
         </div>
     </section>
+    <section id="Transportes">
+        <h2>🚗 Nuestros Transportes</h2>
+        <p class="section-subtitle">Transporte de pasajeros y viajes seguros</p>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-car-front"></i>
+                </div>
+                <h3>Transporte Ejecutivo</h3>
+                <div class="price">$2000</div>
+                <p>Servicio de transporte ejecutivo con vehículos de alta gama. Ideal para reuniones de negocios y
+                    eventos corporativos.</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle"></i> Vehículos ejecutivos</li>
+                    <li><i class="bi bi-check-circle"></i> Conductor profesional</li>
+                    <li><i class="bi bi-check-circle"></i> Aire acondicionado</li>
+                </ul>
+            </div>
+            <!---<div class="card featured">
+                <div class="card-badge">Más Popular</div>
+                <div class="card-icon">
+                    <i class="bi bi-airplane"></i>
+                </div>
+                <h3>Traslado Aeropuerto</h3>
+                <div class="price">$2500</div>
+                <p>Traslado desde y hacia el aeropuerto con puntualidad garantizada. Incluye seguimiento de vuelos.</p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle"></i> Puntualidad garantizada</li>
+                    <li><i class="bi bi-check-circle"></i> Seguimiento de vuelos</li>
+                    <li><i class="bi bi-check-circle"></i> Maletas incluidas</li>
+                </ul>
+            </div>-->
+            <!---<div class="card">
+                <div class="card-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+                <h3>Transporte Grupal</h3>
+                <div class="price">$3000</div>
+                <p>Transporte para grupos de hasta 15 personas. Perfecto para eventos, fiestas y viajes corporativos.
+                </p>
+                <ul class="service-features">
+                    <li><i class="bi bi-check-circle"></i> Hasta 15 pasajeros</li>
+                    <li><i class="bi bi-check-circle"></i> Vehículo espacioso</li>
+                    <li><i class="bi bi-check-circle"></i> Eventos especiales</li>
+                </ul>
+            </div>-->
+        </div>
+        <div class="additional-info">
+            <div class="info-item">
+                <i class="bi bi-info-circle"></i>
+                <span>Precios base para distancias hasta 20km. Consultar para distancias mayores.</span>
+            </div>
+            <div class="info-item">
+                <i class="bi bi-shield-check"></i>
+                <span>Todos nuestros servicios incluyen seguro de pasajeros y conductores certificados.</span>
+            </div>
+        </div>
+    </section>
     <section id="Contacto">
         <h2>📞 Solicita tu Servicio</h2>
         <p class="section-subtitle">Estamos listos para atenderte las 24 horas</p>
@@ -214,7 +273,7 @@
                 </div>
 
                 <div class="service-highlights">
-                    <h4>🚚 ¿Qué entregamos?</h4>
+                    <h4>🚚 ¿Qué entregamos y transportamos?</h4>
                     <ul>
                         <li>📦 Paquetes y encomiendas</li>
                         <li>📄 Documentos importantes</li>
@@ -222,6 +281,10 @@
                         <li>💊 Medicamentos urgentes</li>
                         <li>🎁 Regalos y flores</li>
                         <li>📱 Dispositivos electrónicos</li>
+                        <li>🚗 Transporte ejecutivo</li>
+                        <!--<li>✈️ Traslados aeropuerto</li>
+                        <li>👥 Transporte grupal</li>
+                        <li>🏢 Eventos corporativos</li>-->
                     </ul>
                 </div>
             </div>
@@ -247,9 +310,16 @@
                     <label for="servicio">Tipo de servicio *</label>
                     <select id="servicio" name="servicio" required>
                         <option value="">Selecciona un servicio</option>
-                        <option value="Servicio Estándar">Servicio Estándar (2-3 horas)</option>
-                        <option value="Express 30 min">Express (30 minutos)</option>
-                        <option value="Nocturno">Nocturno (24/7)</option>
+                        <optgroup label="🚚 Mensajería">
+                            <option value="Servicio Estándar">Servicio Estándar (2-3 horas)</option>
+                            <option value="Express 30 min">Express (30 minutos)</option>
+                            <option value="Nocturno">Nocturno (24/7)</option>
+                        </optgroup>
+                        <optgroup label="🚗 Transportes">
+                            <option value="Transporte Ejecutivo">Transporte Ejecutivo</option>
+                            <!--<option value="Traslado Aeropuerto">Traslado Aeropuerto</option>
+                            <option value="Transporte Grupal">Transporte Grupal</option>-->
+                        </optgroup>
                         <option value="Otro">Otro - Especificar en mensaje</option>
                     </select>
                 </div>
@@ -303,6 +373,9 @@
                     <li><a href="#Tarifas">Servicio Estándar</a></li>
                     <li><a href="#Tarifas">Express (30 min)</a></li>
                     <li><a href="#Tarifas">Nocturno 24/7</a></li>
+                    <li><a href="#Transportes">Transporte Ejecutivo</a></li>
+                    <!--<li><a href="#Transportes">Traslado Aeropuerto</a></li>
+                    <li><a href="#Transportes">Transporte Grupal</a></li>-->
                     <li><a href="#Contacto">Solicitar Cotización</a></li>
                 </ul>
             </div>
