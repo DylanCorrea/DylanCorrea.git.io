@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -82,14 +82,29 @@
       <div class="cta-buttons">
         <button
           class="btn-primary"
-          onclick="document.getElementById('Contacto').scrollIntoView({behavior: 'smooth'})"
+          onclick="
+            document
+              .getElementById('Contacto')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
         >
           <i class="bi bi-telephone"></i>
           Solicitar Servicio
         </button>
         <button
+          class="btn-primary"
+          onclick="window.open(urlWhatsApp, '_blank')"
+        >
+          <i class="bi bi-whatsapp"></i>
+          Consultar miniflete o más Información
+        </button>
+        <button
           class="btn-secondary"
-          onclick="document.getElementById('Tarifas').scrollIntoView({behavior: 'smooth'})"
+          onclick="
+            document
+              .getElementById('Tarifas')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
         >
           <i class="bi bi-calculator"></i>
           Ver Tarifas
@@ -529,6 +544,12 @@
     ></script>
 
     <script>
+      // Número de WhatsApp (reemplaza con tu número real)
+      const numeroWhatsApp = "5491127133581"; // Formato: código país + código área + número sin espacios
+
+      // URL base de WhatsApp para consultas generales
+      const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent("Hola! Me gustaría consultar sobre miniflete y más información sobre sus servicios.")}`;
+
       function enviarWhatsApp() {
         // Obtener los valores del formulario
         const nombre = document.getElementById("nombre").value;
@@ -561,14 +582,11 @@
         mensajeWhatsApp += `_Solicitud enviada desde el sitio web de MotoMensajería_%0A`;
         mensajeWhatsApp += `_Fecha: ${new Date().toLocaleString("es-AR")}_`;
 
-        // Número de WhatsApp (reemplaza con tu número real)
-        const numeroWhatsApp = "5491127133581"; // Formato: código país + código área + número sin espacios
-
         // Crear el enlace de WhatsApp
-        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`;
+        const urlWhatsAppForm = `https://wa.me/${numeroWhatsApp}?text=${mensajeWhatsApp}`;
 
         // Abrir WhatsApp en una nueva ventana
-        window.open(urlWhatsApp, "_blank");
+        window.open(urlWhatsAppForm, "_blank");
       }
 
       // Animaciones de entrada
@@ -598,7 +616,7 @@
 
         // Animación para el formulario
         const contactElements = document.querySelectorAll(
-          ".contact-info, .contact-form"
+          ".contact-info, .contact-form",
         );
         contactElements.forEach((element, index) => {
           element.style.opacity = "0";
@@ -606,10 +624,13 @@
             "translateX(" + (index === 0 ? "-50px" : "50px") + ")";
           element.style.transition = `all 0.8s ease ${index * 0.3}s`;
 
-          setTimeout(() => {
-            element.style.opacity = "1";
-            element.style.transform = "translateX(0)";
-          }, 500 + index * 300);
+          setTimeout(
+            () => {
+              element.style.opacity = "1";
+              element.style.transform = "translateX(0)";
+            },
+            500 + index * 300,
+          );
         });
 
         // Efecto de partículas flotantes
