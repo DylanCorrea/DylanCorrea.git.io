@@ -359,6 +359,14 @@ section p {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.contact-form h3 {
+  color: #1e1e2f;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e1e2f;
+}
+
 .form-group {
   margin-bottom: 20px;
 }
